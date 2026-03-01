@@ -2,14 +2,19 @@ package snakeGame;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.LinkedList;
 
 //创建窗体
 public class MainFrame extends JFrame {
+    private Snake snake;
+
     public MainFrame() throws HeadlessException {
         //初始化窗体
         initFrame();
         //初始化游戏面板
         initGamePanel();
+        //初始化蛇
+        initSnake();
     }
 
     //初始化窗体参数
@@ -44,12 +49,17 @@ public class MainFrame extends JFrame {
                     g.drawLine(0, i * 20, 640, i * 20);
                 }
                 //绘制蛇
+
                 //绘制蛇头
                 //绘制食物
             }
         };
         //把面板添加到窗体中
         add(panel);
+    }
+
+    private void initSnake() {
+        Snake snake = new Snake();
     }
 
     public static void main(String[] args) {
