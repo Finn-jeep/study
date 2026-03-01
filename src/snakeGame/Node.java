@@ -29,6 +29,6 @@ public class Node {
     }
     //构造方法用于随机生成一个节点来代表食物
     public void randomNode(){
-        
+
     }
 }
