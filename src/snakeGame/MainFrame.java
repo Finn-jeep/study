@@ -55,6 +55,5 @@ public class MainFrame extends JFrame {
     public static void main(String[] args) {
         //创建窗体对象
         new MainFrame();
-
     }
 }
